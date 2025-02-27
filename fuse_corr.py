@@ -25,9 +25,9 @@ file_path_3 = os.path.join(cwd, 'au_cla_alz_master', 'text_features.csv')
 
 
 
-mfcc_all = pd.read_csv("file_path_1")
-mfcc_top = pd.read_csv("file_path_2")
-text_features = pd.read_csv("file_path_3")
+mfcc_all = pd.read_csv(file_path_1)
+mfcc_top = pd.read_csv(file_path_2)
+text_features = pd.read_csv(file_path_3)
 #training_groundtruth = pd.read_csv("file_path_4")
 
 fuse_and_clean_data(mfcc_top, text_features) #, training_groundtruth)

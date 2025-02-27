@@ -40,9 +40,9 @@ file_path_2 = os.path.join(cwd, 'au_cla_alz_master', 'text_features_labeled.csv'
 file_path_3 = os.path.join(cwd, 'au_cla_alz_master', 'final_important_features_5_15_sec.csv')
 
 #audios = "train"
-mfcc = pd.read_csv("file_path_1")
-text_features_labeled = pd.read_csv("file_path_2")
-important_features = pd.read_csv("file_path_3 ")
+mfcc = pd.read_csv(file_path_1)
+text_features_labeled = pd.read_csv(file_path_2)
+important_features = pd.read_csv(file_path_3)
 
 ################### MFCC ONLY ################### model = svm.SVC(kernel='rbf', gamma=0.07, C=2.5)
 X = mfcc.drop('dx', axis=1)  # Features

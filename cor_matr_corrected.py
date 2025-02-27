@@ -5,7 +5,7 @@ import seaborn as sns
 cwd = os.getcwd()
 file_path = os.path.join(cwd, 'au_cla_alz_master', 'enhanced_training_groundtruth.csv')#
 
-df = pd.read_csv("file_path")
+df = pd.read_csv(file_path)
 
 
 columns_of_interest = ['age', 'gender', 'educ', 'age_educ_ratio']
